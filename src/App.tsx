@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useMutation } from "@tanstack/react-query";
 import { Utensils, AlertCircle } from "lucide-react";
-import { recommendFood, type RecommendResponse } from "@/lib/api";
+import { API_BASE, recommendFood, type RecommendResponse } from "@/lib/api";
 import { SearchBar } from "@/components/SearchBar";
 import { FilterChips } from "@/components/FilterChips";
 import { ResultCard } from "@/components/ResultCard";
@@ -55,9 +55,10 @@ export function App() {
               <div className="font-medium">Couldn't load recommendations</div>
               <div className="mt-1 text-red-700">{error.message}</div>
               <div className="mt-2 text-xs text-red-600">
-                Make sure the food-backend is running on{" "}
-                <code className="font-mono">http://localhost:4000</code> and that
-                CORS includes <code className="font-mono">http://localhost:5173</code>.
+                Tried to reach{" "}
+                <code className="font-mono">{API_BASE}</code>. If this is the
+                Render free-tier API, the first request after idle can take
+                ~30s while the service wakes up — try again in a moment.
               </div>
             </div>
           </div>

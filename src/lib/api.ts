@@ -7,7 +7,7 @@
  * the X-API-Key header.
  */
 
-const API_BASE =
+export const API_BASE =
   import.meta.env.VITE_API_BASE ?? "http://localhost:4000";
 
 // ── Response types — mirror the food-backend's chat.service.ts ──

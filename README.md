@@ -2,6 +2,11 @@
 
 A React + TypeScript frontend for the [ai-food-backend](https://github.com/rohitanakiya/foodhelp) semantic food recommender.
 
+> 🚀 **Live demo:** https://foodhelp-frontend.vercel.app
+> **API:** https://ai-food-backend-ib8i.onrender.com
+>
+> _The backend runs on Render's free tier, so the first request after a period of inactivity may take ~30 seconds while the service wakes up. Subsequent requests are fast._
+
 ## What it does
 
 A search bar that takes natural-language queries like *"cheap high protein veg food in bangalore"* and renders the top semantic matches as ranked food cards. Filters extracted from the query are shown as colored chips above the results. Each card shows the restaurant, price, protein, calories, rating, and a semantic-match bar.
