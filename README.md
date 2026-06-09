@@ -3,6 +3,23 @@
 A React + TypeScript frontend for the [ai-food-backend](https://github.com/rohitanakiya/foodhelp) semantic food recommender.
 
 > 🚀 **Live demo:** https://foodhelp-frontend.vercel.app
+
+## Demo
+
+**Structured constraints — natural-language query becomes typed filter chips:**
+
+<p>
+  <img src="./docs/filter_light.png" alt="Filter extraction (light mode)" width="48%" />
+  <img src="./docs/filter_dark.png" alt="Filter extraction (dark mode)" width="48%" />
+</p>
+
+**Pure semantic search when no constraints apply — falls back to embedding similarity:**
+
+<p>
+  <img src="./docs/semantic_light.png" alt="Semantic search (light mode)" width="48%" />
+  <img src="./docs/semantic_dark.png" alt="Semantic search (dark mode)" width="48%" />
+</p>
+
 > **API:** https://ai-food-backend-ib8i.onrender.com
 >
 > _The backend runs on Render's free tier, so the first request after a period of inactivity may take ~30 seconds while the service wakes up. Subsequent requests are fast._
