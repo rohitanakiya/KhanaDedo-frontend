@@ -16,7 +16,7 @@ interface SuggestedQueriesProps {
 export function SuggestedQueries({ onPick, disabled }: SuggestedQueriesProps) {
   return (
     <div className="flex flex-wrap items-center gap-2">
-      <span className="flex items-center gap-1 text-xs font-medium text-gray-500">
+      <span className="flex items-center gap-1 text-xs font-medium text-gray-500 dark:text-gray-400">
         <Sparkles className="h-3.5 w-3.5" />
         Try one of these:
       </span>
@@ -26,7 +26,7 @@ export function SuggestedQueries({ onPick, disabled }: SuggestedQueriesProps) {
           type="button"
           onClick={() => onPick(q)}
           disabled={disabled}
-          className="rounded-full border border-gray-200 bg-white px-3 py-1 text-xs text-gray-700 transition hover:border-emerald-300 hover:bg-emerald-50 disabled:cursor-not-allowed disabled:opacity-60"
+          className="rounded-full border border-gray-200 bg-white px-3 py-1 text-xs text-gray-700 transition hover:border-emerald-300 hover:bg-emerald-50 disabled:cursor-not-allowed disabled:opacity-60 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:hover:border-emerald-700 dark:hover:bg-emerald-950/40"
         >
           {q}
         </button>
