@@ -15,6 +15,7 @@ export const API_BASE =
 export interface ExtractedFilters {
   city?: string;
   veg?: boolean;
+  vegan?: boolean;
   maxPrice?: number;
   minProtein?: number;
 }
@@ -32,6 +33,8 @@ export interface Recommendation {
 
 export interface RecommendResponse {
   provider: string;
+  filterProvider?: "groq" | "regex";
+  filterProviderFellBack?: boolean;
   filters: ExtractedFilters;
   recommendations: Recommendation[];
   note?: string;

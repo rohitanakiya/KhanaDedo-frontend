@@ -19,7 +19,14 @@ function buildChips(filters: ExtractedFilters): Chip[] {
         "bg-blue-100 text-blue-800 ring-blue-200 dark:bg-blue-950/50 dark:text-blue-200 dark:ring-blue-800/60",
     });
   }
-  if (filters.veg !== undefined) {
+  // Vegan implies veg — show the more specific vegan chip and skip veg.
+  if (filters.vegan) {
+    chips.push({
+      label: "🌱 Vegan",
+      className:
+        "bg-teal-100 text-teal-800 ring-teal-200 dark:bg-teal-950/50 dark:text-teal-200 dark:ring-teal-800/60",
+    });
+  } else if (filters.veg !== undefined) {
     chips.push(
       filters.veg
         ? {
