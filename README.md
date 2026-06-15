@@ -1,8 +1,8 @@
-# 🍽️ AI Food Frontend
+# 🍽️ KhanaDedo — Frontend
 
-A React + TypeScript frontend for the [ai-food-backend](https://github.com/rohitanakiya/foodhelp) semantic food recommender.
+A React + TypeScript frontend for the [ai-food-backend](https://github.com/rohitanakiya/KhanaDedo) semantic food recommender.
 
-> 🚀 **Live demo:** https://foodhelp-frontend.vercel.app
+> 🚀 **Live demo:** https://khanadedo.vercel.app
 
 ## Demo
 

@@ -35,10 +35,10 @@ export function App() {
           </div>
           <div className="flex-1">
             <h1 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
-              AI Food Recommender
+              KhanaDedo
             </h1>
             <p className="text-xs text-gray-500 dark:text-gray-400">
-              Semantic search over real menu data
+              Doomscroll khatam. Khana shuru.
             </p>
           </div>
           <ThemeToggle />
