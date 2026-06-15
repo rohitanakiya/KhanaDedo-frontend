@@ -79,6 +79,8 @@ export function App() {
               </div>
               <p className="text-xs text-gray-500 dark:text-gray-400">
                 via {data.provider}
+                {data.filterProvider && ` + ${data.filterProvider}`}
+                {data.filterProviderFellBack && " (fallback)"}
               </p>
             </div>
 
